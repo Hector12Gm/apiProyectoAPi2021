@@ -10,7 +10,7 @@ let connection = mysql.createConnection({
 
 connection.on('error',(err)=>{
     console.log(err);
-}
+});
 connection.connect((err)=>{
     if(err){
         console.log("Hubo un gran error");
