@@ -7,6 +7,10 @@ let connection = mysql.createConnection({
     database: 'heroku_5d92d94f28c72d1'
 
 });
+
+connection.on('error',(err)=>){
+    console.log(err);
+}
 connection.connect((err)=>{
     if(err){
         console.log("Hubo un gran error");
