@@ -8,6 +8,9 @@ let connection = mysql.createPool({
 
 });
 
+connection.on('connection', function (connection) {
+   console.log('\n**************\nSe creo una conexion\n')
+});
 connection.on('error',(err)=>{
     console.log(err);
 });
