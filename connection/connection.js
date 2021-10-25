@@ -8,7 +8,7 @@ let connection = mysql.createConnection({
 
 });
 
-connection.on('error',(err)=>){
+connection.on('error',(err)=>{
     console.log(err);
 }
 connection.connect((err)=>{
