@@ -1,6 +1,6 @@
 let mysql = require('mysql');
 
-let connection = mysql.createConnection({
+let connection = mysql.createPool({
     host: 'us-cdbr-east-04.cleardb.com',
     user: 'bb35afa5fe01c5',
     password: 'a77550ac',
