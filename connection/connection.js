@@ -11,7 +11,7 @@ let connection = mysql.createPool({
 connection.on('error',(err)=>{
     console.log(err);
 });
-connection.connect((err)=>{
+connection.getConnection((err,con)=>{
     if(err){
         console.log("Hubo un gran error");
     }else{
